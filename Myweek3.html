@@ -24,6 +24,8 @@
         width: 100%;
         height: 100vh;
 
+
+
       }
       .video-container video {
         position: absolute;
@@ -32,7 +34,17 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-      
+        position: relative;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+        
+
+
       }
       .overlay {
         position: absolute;
@@ -44,7 +56,7 @@
         color: #fff;
       }
       .overlay h1 {
-       font-size: 5em;
+        font-size: 5em;
         margin: 0;
         padding: 0;
         text-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -53,7 +65,7 @@
         
       }
       .overlay p {
-        font-size: 1.75em;
+        font-size: 2em;
         margin: 0;
         padding: 0;
         text-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -71,8 +83,9 @@ input[type=text], input[type=email] {
     border-radius: 5px;
     border: 1px solid #ccc;
     border: none;
-    border-radius: 18px;
+    border-radius: 20px;
     box-sizing: border-box;
+    z-index: 1999;
     opacity: 0.7;
     font-size: 17px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -89,7 +102,7 @@ input[type=text], input[type=phonenumber] {
     border-radius: 5px;
     border: 1px solid #ccc;
     border: none; /* remove default border */
-    border-radius: 18px; /* set the border radius to 20 pixels */
+    border-radius: 20px; /* set the border radius to 20 pixels */
     box-sizing: border-box; /* include padding in element's total width and height */
     opacity: 0.7;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -108,7 +121,7 @@ input[type=text], input[type=password] {
     border-radius: 5px;
     border: 1px solid #ccc;
     border: none; /* remove default border */
-    border-radius: 18px; /* set the border radius to 20 pixels */
+    border-radius: 20px; /* set the border radius to 20 pixels */
     box-sizing: border-box; /* include padding in element's total width and height */
     opacity: 0.7;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -127,7 +140,7 @@ input[type=submit] {
     cursor: pointer;
     display: block;
     margin: 0 auto; 
-    margin-top: 4px;
+    margin-top: 10px;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold
@@ -150,18 +163,18 @@ input[type=submit] {
 
 #my-form{
   position: absolute;
-  top:30%;
+  top:40%;
   left: 0;
   background-color: transparent;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
+  width: 400px;
   text-align: center;
+  z-index: 999;
   color:whitesmoke;
-  font-size: 21px;
+  font-size: 22px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
-  height:300px
 }
 
 #para{
