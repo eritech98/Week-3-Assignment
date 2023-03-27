@@ -50,6 +50,7 @@
         text-shadow: 0 0 10px rgba(0,0,0,0.5);
         top: 10%;
         color:#f1ffcf;
+ 
         
       }
       .overlay p {
@@ -272,7 +273,16 @@ input[type=submit] {
   
   
 }
-
+      @media(max-width:767px){
+	iframe[title="Message from company"] {
+    bottom: 0 !important;
+    right: 84px !important;
+    width: 148px !important;
+}align-content
+}
+@media(min-width:769px){
+.postid-6944 .add-va-banner .content{
+  max-width: 580px;}
 
     </style>
   </head>
@@ -299,119 +309,4 @@ input[type=submit] {
         <div class="overlay2">
 
           <aside>
-        <div class="leftcontent"><p>&copy;eritech 2023</p></div>
-          </aside>
-
-          <aside style="float:right;">
-        <div class="rightcontent"><img src="https://img.icons8.com/ios-glyphs/24/null/linkedin.png"/> <img src="https://img.icons8.com/fluency-systems-regular/24/null/facebook-new--v1.png"/> <img src="https://img.icons8.com/fluency-systems-filled/24/null/instagram-new.png"/> <img src="https://img.icons8.com/ios-filled/24/null/twitter-circled--v1.png"/></div>
-
-      </div> 
-      <div class="overlay">
-        <div id="para">
-            <h1>Welcome to eritech</h1>
-            <p>Get ready to be inspired.</p>
-            </div>    
-   
-    </div>
-
-    <div id="my-form">
-        <form action="#" method="post" onsubmit="return validateForm()">
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="phonenumber">Phone Number:</label>
-            <input type="phonenumber" id="phonenumber" name="phonenumber" required>
-    
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-    
-            
-            <div class="error" id="emailError">Please enter a valid email address.</div>
-            <input type="submit" value="Login">
-            <div class="success" id="successMsg">Your form has been submitted successfully.</div>
-    
-        </form> 
-
-        <script>
-
-    function validateForm() {
-     var name = document.getElementById("name").value;
-    var phoneNumber = document.getElementById("phonenumber").value;
-    var password = document.getElementById("password").value;
-    var email = document.getElementById("email").value;
-    var emailError = document.getElementById("emailError");
-    var isValid = true;
-
-    if (name === "") {
-        document.getElementById("name").classList.add("highlight");
-        isValid = false;
-    } else {
-        document.getElementById("name").classList.remove("highlight");
-    }
-
-    if (phoneNumber === "") {
-        document.getElementById("phonenumber").classList.add("highlight");
-        isValid = false;
-    } else {
-        document.getElementById("phonenumber").classList.remove("highlight");
-    }
-
-    if (password === "") {
-        document.getElementById("password").classList.add("highlight");
-        isValid = false;
-    } else {
-        document.getElementById("password").classList.remove("highlight");
-    }
-
-    if (email === "") {
-        document.getElementById("email").classList.add("highlight");
-        emailError.style.display = "none";
-        isValid = false;
-    } else if (!isValidEmail(email)) {
-        document.getElementById("email").classList.add("highlight");
-        emailError.style.display = "block";
-        isValid = false;
-    } else {
-        document.getElementById("email").classList.remove("highlight");
-        emailError.style.display = "none";
-    }
-
-    if (isValid) {
-        alert("Message has been submitted successfully!");
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function isValidEmail(email) {
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email);
-}
-
-        </script>
-
-
-
-   
-
-  </div>
-    
-
-    </div>
-
-    
-
-
-
-  </body>
-</html>
-
-
-
-
-
+        <div class="leftcontent"><p
